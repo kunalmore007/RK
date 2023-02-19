@@ -9,9 +9,13 @@ html, body {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #FFC568;
+  /* background-color: #FFC568; */
   font-size: 62.5%;
   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  animation-name: colorchange;
+  animation-duration: 10s;
+  animation-timing-function: ease;
+  animation-iteration-count: infinite;
 }
 @media screen and (max-width: 520px) {
   html, body {
@@ -58,4 +62,12 @@ html, body {
 }
 .sound--off {
   text-decoration: line-through;
+}
+
+@keyframes colorchange {
+  0% {background-color: rgb(245, 158, 10);}
+  25% {background-color: yellow;}
+  50% {background-color: green;}
+  75% {background-color: goldenrod;}
+  100% {background-color: aquamarine;}
 }
